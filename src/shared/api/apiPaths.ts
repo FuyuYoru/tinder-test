@@ -1,14 +1,14 @@
 export class ApiPath {
-    static signIn () {
+    static signIn() {
         return '/auth/signIn'
     }
-    static signUp () {
+    static signUp() {
         return '/auth/signUp'
     }
-    static getMe () {
-        return '/user/me'
+    static getUserById(userId: string) {
+        return `/api/users/${userId}`
     }
-    static updateProfile () {
+    static updateProfile() {
         return '/user/profile-update'
     }
 }
