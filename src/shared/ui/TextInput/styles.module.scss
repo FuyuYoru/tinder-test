@@ -1,0 +1,13 @@
+@use "@shared/configs/styles/variables.module.scss";
+
+.dark {
+    background-color: $bgDarkColor;
+    color: $textDarkColor;
+    border-color: $borderDarkColor;
+}
+
+.light {
+    background-color: $bgLightColor;
+    color: $textLightColor;
+    border-color: $borderLightColor;
+}
