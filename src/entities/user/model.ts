@@ -6,6 +6,7 @@ export interface IUser {
     firstname: string,
     lastname: string,
     avatar: Blob | null,
+    photos: Blob[],
     passions: PassionType[],
     birthDate: string,
     createdAt: string,

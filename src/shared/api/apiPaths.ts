@@ -11,4 +11,7 @@ export class ApiPath {
     static updateProfile() {
         return '/user/profile-update'
     }
+    static getUsersList() {
+        return '/user/list'
+    }
 }
