@@ -1,13 +1,13 @@
-@use "@shared/configs/styles/variables.module.scss";
+@use "@shared/configs/styles/variables.module" as vars;
 
 .dark {
-    background-color: $bgDarkColor;
-    color: $textDarkColor;
-    border-color: $borderDarkColor;
+    background-color: vars.$bgDarkColor;
+    color: vars.$textDarkPrimary;
+    border-color: vars.$borderDarkColor;
 }
 
 .light {
-    background-color: $bgLightColor;
-    color: $textLightColor;
-    border-color: $borderLightColor;
+    background-color: vars.$bgLightColor;
+    color: vars.$textLightPrimary;
+    border-color: vars.$borderLightColor;
 }

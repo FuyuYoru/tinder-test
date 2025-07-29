@@ -11,14 +11,11 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...rest
 }) => {
-  const baseStyles = 'pt-[8px] pb-[10px] rounded-md font-medium transition bg-linear-to-r from-[#FD267A] to-[#FF6036]';
-  const variantStyles = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700',
-  };
+  const baseStyles = 'pt-[8px] pb-[10px] w-full text-white rounded-full font-medium transition bg-linear-to-tr from-[#FD267A] to-[#FF6036]';
 
   return (
     <button
-      className={clsx(baseStyles, variantStyles[variant], className)}
+      className={clsx(baseStyles, className)}
       {...rest}
     >
       {children}

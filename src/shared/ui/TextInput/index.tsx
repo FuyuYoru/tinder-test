@@ -1,22 +1,25 @@
 import React from 'react';
 import clsx from 'clsx';
 import variantStyles from './styles.module.scss';
+import { useTheme } from '@app/providers/ThemeProvider';
 
-type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
-    variant?: 'dark' | 'light';
-};
+type InputProps = React.InputHTMLAttributes<HTMLInputElement>
+// & {
+//     variant?: 'dark' | 'light';
+// };
 
 export const TextInput: React.FC<InputProps> = ({
-    variant = 'dark',
     className,
     children,
     ...rest
 }) => {
-    const baseStyles = 'px-[14px] py-[12px] w-full rounded-lg font-medium';
+    const baseStyles = 'px-[14px] py-[12px] w-full border-[1px] rounded-lg font-regular';
+    const { theme } = useTheme();
 
     return (
-        <div className={clsx(baseStyles, variantStyles[variant], className)}>
+        <div className={clsx(baseStyles, variantStyles[theme], className)}>
             <input
+                className='w-full appearance-none border-none outline-none bg-transparent'
                 {...rest}
             >
                 {children}
