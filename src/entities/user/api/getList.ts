@@ -1,5 +1,5 @@
-import { ApiPath } from "@/shared/api/apiPaths";
-import { api } from "@/shared/api/axiosInstance";
+import { ApiPath } from "@shared/api/apiPaths";
+import { api } from "@shared/api/axiosInstance";
 
 export const getList = async () => {
     return api

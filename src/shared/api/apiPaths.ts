@@ -5,8 +5,11 @@ export class ApiPath {
     static signUp() {
         return '/auth/signUp'
     }
+    static checkExisting(login: string) {
+        return `/auth/check/${login}`
+    }
     static getUserById(userId: string) {
-        return `/api/users/${userId}`
+        return `/users/${userId}`
     }
     static updateProfile() {
         return '/user/profile-update'

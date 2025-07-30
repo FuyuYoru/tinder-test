@@ -1,6 +1,6 @@
-import { IUser } from "@/entities/user/model"
-import { ApiPath } from "@/shared/api/apiPaths"
-import { api } from "@/shared/api/axiosInstance"
+import { IUser } from "@entities/user/model"
+import { ApiPath } from "@shared/api/apiPaths"
+import { api } from "@shared/api/axiosInstance"
 
 type ProfileData = Partial<Pick<IUser, 'firstname' | 'lastname' | 'avatar' | 'birthDate'>>
 

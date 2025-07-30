@@ -1,5 +1,5 @@
-import { ApiPath } from "@/shared/api/apiPaths";
-import { api } from "@/shared/api/axiosInstance";
+import { ApiPath } from "@shared/api/apiPaths";
+import { api } from "@shared/api/axiosInstance";
 
 // В качестве userId использую login
 export const getById = async (userId: string) => {

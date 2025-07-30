@@ -1,6 +1,6 @@
-import { PassionType } from "@/mock/passions";
-import { ApiPath } from "@/shared/api/apiPaths";
-import { api } from "@/shared/api/axiosInstance";
+import { PassionType } from "@mock/passions";
+import { ApiPath } from "@shared/api/apiPaths";
+import { api } from "@shared/api/axiosInstance";
 
 // В качестве userId использую login
 export const updatePassions = async (userId: string, passions: PassionType[]) => {
